@@ -2,10 +2,8 @@ package app;
 
 import static io.github.libsdl4j.api.render.SdlRender.SDL_CreateTextureFromSurface;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_RenderCopy;
-import static io.github.libsdl4j.api.render.SdlRender.SDL_RenderCopyF;
 import static io.github.libsdl4j.api.surface.SdlSurface.SDL_LoadBMP;
 
-import io.github.libsdl4j.api.rect.SDL_FRect;
 import io.github.libsdl4j.api.rect.SDL_Rect;
 import io.github.libsdl4j.api.render.SDL_Renderer;
 import io.github.libsdl4j.api.render.SDL_Texture;

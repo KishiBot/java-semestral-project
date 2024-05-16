@@ -1,9 +1,6 @@
 package app;
 
-import java.util.Arrays;
-
 import io.github.libsdl4j.api.rect.SDL_Rect;
-import io.github.libsdl4j.api.render.SDL_Texture;
 
 /**
  * Ui

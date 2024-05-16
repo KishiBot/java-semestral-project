@@ -11,11 +11,9 @@ import static io.github.libsdl4j.api.error.SdlError.SDL_GetError;
 import static io.github.libsdl4j.api.event.SDL_EventType.*;
 import static io.github.libsdl4j.api.event.SdlEvents.SDL_PollEvent;
 import static io.github.libsdl4j.api.keycode.SDL_Keycode.SDLK_ESCAPE;
-import static io.github.libsdl4j.api.keycode.SDL_Keycode.SDLK_F5;
 import static io.github.libsdl4j.api.render.SDL_RendererFlags.SDL_RENDERER_ACCELERATED;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_CreateRenderer;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_DestroyRenderer;
-import static io.github.libsdl4j.api.video.SDL_WindowFlags.SDL_WINDOW_FULLSCREEN;
 import static io.github.libsdl4j.api.video.SDL_WindowFlags.SDL_WINDOW_SHOWN;
 import static io.github.libsdl4j.api.video.SdlVideo.SDL_CreateWindow;
 import static io.github.libsdl4j.api.video.SdlVideo.SDL_DestroyWindow;
@@ -138,12 +136,7 @@ public class Engine {
                     running = false;
                     break;
                 case SDL_KEYDOWN:
-                    if (e.key.keysym.sym == SDLK_F5) {
-                        // Hotswap
-                        DrawHandler.load();
-                        ObjectHandler.cleanObjects();
-                        ObjectHandler.loadObjects("data/obj.data");
-                    } else if (e.key.keysym.sym == SDLK_ESCAPE) {
+                    if (e.key.keysym.sym == SDLK_ESCAPE) {
                         Menu.setState(!Menu.isRunning());
                     } else {
                         Input.setKeyDown(e.key.keysym);
@@ -175,33 +168,20 @@ public class Engine {
 
         // Main application loop
         while (running) {
-            long eventTime = 0;
-            long drawTime = 0;
-            long updateTime = 0;
-            long uiTime = 0;
-
             Time.update();
-            long start = System.currentTimeMillis();
             eventUpdate();
-            eventTime = System.currentTimeMillis() - start;
 
-            start = System.currentTimeMillis();
             DrawHandler.draw();
-            drawTime = System.currentTimeMillis() - start;
 
-            start = System.currentTimeMillis();
             if (!Menu.isRunning()) {
                 Ui.draw();
             }
-            uiTime = System.currentTimeMillis() - start;
             
-            start = System.currentTimeMillis();
             ObjectHandler.update();
             ObjectHandler.remUpdate();
             ObjectHandler.addCreatedObjects();
             ObjectHandler.resetUpdate();
             Camera.update();
-            updateTime = System.currentTimeMillis() - start;
 
             TextHandler.alignRight();
             TextHandler.alignBottom();
@@ -209,8 +189,6 @@ public class Engine {
 
             TextHandler.alignLeft();
             TextHandler.alignTop();
-            // String time = String.format("event: %d\ndraw: %d\nupdate: %d\nui: %d\n", eventTime, drawTime, updateTime, uiTime);
-            // TextHandler.drawText(time, new Vd2(0, 900), 4);
 
             if (Menu.isRunning()) {
                 Menu.update();

@@ -486,44 +486,7 @@ public class Enemy extends Object{
 
         // Drop coins
         for (int i = 0; i < coin; ++i) {
-            Vd2 dir = new Vd2(Math.random()*2 - 1, Math.random()*2 - 1);
-
-            // Create coin
-            Coin obj = new Coin("throwable", Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), new Vd2(16, 16), 1, 1f, (float)(100*Math.random()), dir, 0, coinCost);
-            SDL_Rect a = new SDL_Rect();
-            a.y = 0;
-            a.w = 16;
-            a.h = 16;
-
-            String text = null;
-            if (coinCost < 10) {
-                a.x = 32;
-                text = "copper";
-            } else if (coinCost < 50) {
-                a.x = 16;
-                text = "silver";
-            } else {
-                a.x = 0;
-                text = "gold";
-            }
-
-
-            Sprite coin = new Sprite("coin", a);
-            SDL_Rect b = new SDL_Rect();
-            b.x = 0;
-            b.y = 0;
-            b.w = 16;
-            b.h = 16;
-            Sprite shadow = new Sprite("shade", b);
-            obj.setSpr(text, "shade", coin, shadow);
-
-            // Create coin collider
-            Collider col = new Collider(new Vd2(-7, -7), new Vd2(15, 15));
-            col.setParent(obj);
-            obj.setCollider(col);
-            col.setTrigger(true);
-
-            ObjectHandler.createObject(obj);
+            Player.dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), (float)(100*Math.random()), coinCost, "throwable");
         }
     }
 

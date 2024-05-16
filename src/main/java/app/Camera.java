@@ -1,9 +1,5 @@
 package app;
 
-import java.util.ArrayList;
-
-import app.Debug;
-
 /**
  * Camera
  */

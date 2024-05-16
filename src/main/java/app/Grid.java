@@ -3,7 +3,6 @@ package app;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_CreateTexture;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_RenderClear;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_RenderCopy;
-import static io.github.libsdl4j.api.render.SdlRender.SDL_SetRenderDrawBlendMode;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_SetRenderDrawColor;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_SetRenderTarget;
 import static io.github.libsdl4j.api.render.SdlRender.SDL_SetTextureBlendMode;

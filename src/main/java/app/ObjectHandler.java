@@ -493,6 +493,8 @@ public class ObjectHandler {
                 obj.resetPos();
             } else {
                 obj.setPos(((Player)obj).getLastSavePos());
+                obj.setHp(obj.getMaxHp());
+                obj.setAlive(true);
             }
 
             // Reset not npcs
@@ -551,7 +553,7 @@ public class ObjectHandler {
                         }
                     } else if (ch == 'c') {
                         // Load dropped coins
-                        Player.dropCoin(new Vd2(is.readDouble(), is.readDouble()), 0, is.readInt());
+                        Player.dropCoin(new Vd2(is.readDouble(), is.readDouble()), 0, is.readInt(), "coin");
                     }
                 } catch (EOFException eof) {
                     // Reached eof

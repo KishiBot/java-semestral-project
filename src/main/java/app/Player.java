@@ -238,11 +238,11 @@ public class Player extends Object {
         setVelocity(mov);
     }
 
-    public static void dropCoin(Vd2 pos, float dist, int cost) {
+    public static void dropCoin(Vd2 pos, float dist, int cost, String tag) {
         Vd2 dir = new Vd2(Math.random()*2 - 1, Math.random()*2 - 1);
 
         // Create coin
-        Coin obj = new Coin("coin", pos, new Vd2(16, 16), 1, 1f, (float)(dist*Math.random()), dir, 0, cost);
+        Coin obj = new Coin(tag, pos, new Vd2(16, 16), 1, 1f, (float)(dist*Math.random()), dir, 0, cost);
         SDL_Rect a = new SDL_Rect();
         a.y = 0;
         a.w = 16;
@@ -291,13 +291,13 @@ public class Player extends Object {
         int silver = (coins - gold * 50) / 10;
         int copper = coins - silver * 10 - gold * 50;
         for (int i = 0; i < gold; ++i) {
-            dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), 100, 50);
+            dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), 100, 50, "coin");
         }
         for (int i = 0; i < silver; ++i) {
-            dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), 100, 10);
+            dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), 100, 10, "coin");
         }
         for (int i = 0; i < copper; ++i) {
-            dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), 100, 1);
+            dropCoin(Vd2.sub(getCol().getCenter(), new Vd2(32, 32)), 100, 1, "coin");
         }
         coins = 0;
     }

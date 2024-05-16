@@ -28,7 +28,6 @@ import java.util.Scanner;
 import app.Logger.Severity;
 import io.github.libsdl4j.api.blendmode.SDL_BlendMode;
 import io.github.libsdl4j.api.pixels.SDL_Color;
-import io.github.libsdl4j.api.rect.SDL_FRect;
 import io.github.libsdl4j.api.rect.SDL_Rect;
 import io.github.libsdl4j.api.render.SDL_Renderer;
 import io.github.libsdl4j.api.render.SDL_RendererFlip;
