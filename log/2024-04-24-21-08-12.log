@@ -1,0 +1,30 @@
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading texture, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_idle, length: 7
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: player_idle, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: test, length: 5
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_att_down, length: 6
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_right, length: 6
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: tree, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_att_up, length: 6
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: player_down, length: 2
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: player_right, length: 2
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_left, length: 6
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: player_up, length: 2
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: player_left, length: 2
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_att_right, length: 6
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_tower, length: 4
+[2024-04-24-21-08-13] [[32mINFO[0m] DrawHandler: Loading anim: goblin_att_left, length: 6
+[2024-04-24-21-08-13] [[33mWARNING[0m] Mixer: Could not play: resources/audio/doll.wav: java.lang.IllegalArgumentException: No line matching interface Clip supporting format PCM_SIGNED unknown sample rate, 16 bit, stereo, 4 bytes/frame, big-endian is supported.

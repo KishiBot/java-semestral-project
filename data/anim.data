@@ -1,0 +1,34 @@
+player_idle player 16 16 0 0 0.3 0.6 0.9 1.2 
+red_knight_att2_right red_knight 192 192 0 576 0.2 0.2 0.2 0.2 0.2 0.2 
+death death 127 127 0 0 0.2 0.2 0.2 0.2 0.2 0.2 0.2 
+knight_att2_up knight 192 192 0 1920 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_right goblin 192 192 0 192 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_att_up goblin 192 192 0 962 0.2 0.2 0.2 0.2 0.2 0.2 
+red_knight_right red_knight 192 192 0 192 0.2 0.2 0.2 0.2 0.2 0.2 
+red_knight_att1_down red_knight 192 192 0 768 0.4 0.4 0.2 0.2 0.2 0.2 
+red_knight_att1_up red_knight 192 192 0 1152 0.4 0.4 0.2 0.2 0.2 0.2 
+player_up player 16 16 32 17 0.1 0.2 
+knight_att1_down knight 192 192 0 1344 0.4 0.4 0.2 0.2 0.2 0.2 
+goblin_att_right goblin 192 192 0 578 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_dmt_idle goblin_dynamite 192 192 0 0 0.3 0.3 0.3 0.3 0.3 0.3 
+goblin_dmt_att goblin_dynamite 192 192 0 384 0.4 0.5 0.6 0.3 0.3 0.3 0.3 
+player_dash player 16 16 0 48 0.2 
+red_knight_idle red_knight 192 192 0 0 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_idle goblin 192 192 0 0 0.1 0.1 0.11 0.12 0.13 0.14 0.15 
+test test 16 16 0 0 0.1 0.2 0.3 0.4 0.5 
+knight_right knight 192 192 0 192 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_att_down goblin 192 192 0 769 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_dmt_mov goblin_dynamite 192 192 0 192 0.3 0.3 0.3 0.3 0.3 0.3 
+tree tree 192 192 0 0 0.6 0.6 0.6 0.6 
+knight_att2_right knight 192 192 0 576 0.2 0.2 0.2 0.2 0.2 0.2 
+knight_att1_up knight 192 192 0 1728 0.4 0.4 0.2 0.2 0.2 0.2 
+player_down player 16 16 0 17 0.1 0.2 
+player_right player 16 16 33 32 0.1 0.2 
+knight_idle knight 192 192 0 0 0.2 0.2 0.2 0.2 0.2 0.2 
+explosion explosion 192 192 0 0 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 
+red_knight_att2_up red_knight 192 192 0 1344 0.2 0.2 0.2 0.2 0.2 0.2 
+goblin_tower goblin_tower 256 192 0 0 0.3 0.3 0.3 0.3 
+red_knight_att1_right red_knight 192 192 0 384 0.4 0.4 0.2 0.2 0.2 0.2 
+knight_att1_right knight 192 192 0 384 0.4 0.4 0.2 0.2 0.2 0.2 
+red_knight_att2_down red_knight 192 192 0 960 0.2 0.2 0.2 0.2 0.2 0.2 
+knight_att2_down knight 192 192 0 1536 0.2 0.2 0.2 0.2 0.2 0.2 
